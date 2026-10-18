@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DRG | Test Website</title>
+  <meta name="description" content="Welcome to the official DRG website.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: #0b1120;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+      text-align: center;
+      padding: 64px 24px;
+      border: 1px solid #26334d;
+      border-radius: 24px;
+      background: linear-gradient(145deg, #111c32, #0d1424);
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.3);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 9px 15px;
+      border-radius: 50px;
+      background: #142b38;
+      color: #5eead4;
+      font-size: 13px;
+      margin-bottom: 26px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      color: #60a5fa;
+    }
+
+    p {
+      color: #a9b6ca;
+      font-size: 17px;
+      line-height: 1.8;
+      margin: 0 auto 30px;
+      max-width: 500px;
+    }
+
+    button {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 45px;
+      color: #72819a;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="badge">● Website Test Successful</div>
+
+    <h1>Welcome to <span>DRG</span></h1>
+
+    <p>
+      DRG Website is Live! This is a test page for
+      drg.com.np. Your new website journey starts here.
+    </p>
+
+    <button onclick="showMessage()">
+      Test My Website
+    </button>
+
+    <footer>
+      © 2026 DRG. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    function showMessage() {
+      alert("Success! Your DRG test page is working.");
+    }
+  </script>
+</body>
+</html>
